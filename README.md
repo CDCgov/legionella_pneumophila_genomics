@@ -62,8 +62,9 @@ Or the container can be run from the wrapper script:
  
  Or you can pull the container from:
  
+ ```
  docker pull smorrison42/lpserogroup_prediction:0.2
-
+```
 
 The wrapper script creates the output directory and sets the ulimit.
 
