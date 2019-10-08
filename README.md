@@ -27,7 +27,7 @@ ulimit -s 5248800
 For users in the CDC environment, build the docker container by running the `build.sh` script:
 
 ```
-./build.sh --tag=lp_serogroup:0.1
+./build.sh --tag=lp_serogroup:0.2
 ```
 
 The `--tag` parameter is optional and has a default value of `lp_serogroup:0.1`.
@@ -37,7 +37,7 @@ The `--tag` parameter is optional and has a default value of `lp_serogroup:0.1`.
 For external users, build the container using ``Dockerfile.external``:
 
 ```
-docker build -t lp_serogroup:0.1 -f Dockerfile.external .
+docker build -t lp_serogroup:0.2 -f Dockerfile.external .
 ```
 
 ## Docker UID and GID
@@ -51,7 +51,7 @@ The container can be run directly as follows:
 ```
 mkdir output   # the output directory must be created prior to running the docker container
 ulimit -s 5248800
-docker run -v $(pwd)/test-samples:/data -v $(pwd)/output:/output --privileged --rm lp_serogroup:0.1 --r1=/data/sample_R1.fastq --r2=/data/sample_R2.fastq --isolate=sample
+docker run -v $(pwd)/test-samples:/data -v $(pwd)/output:/output --privileged --rm lp_serogroup:0.2 --r1=/data/sample_R1.fastq --r2=/data/sample_R2.fastq --isolate=sample
 ```
 
 Or the container can be run from the wrapper script:
@@ -59,6 +59,11 @@ Or the container can be run from the wrapper script:
 ```
 ./wrapper.sh --docker=lp_serogroup:0.1 --r1=./test-samples/sample_R1.fastq --r2=./test-samples/sample_R2.fastq --isolate=sample --output=./output
 ```
+ 
+ Or you can pull the container from:
+ 
+ docker pull smorrison42/lpserogroup_prediction:0.2
+
 
 The wrapper script creates the output directory and sets the ulimit.
 
