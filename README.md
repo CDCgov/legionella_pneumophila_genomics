@@ -1,6 +1,6 @@
 # Legionella pneumophila in silico Serogroup Prediction
 
-Version: 0.0.2
+Version: 0.2
 
 This project is contains a bioinformatics workflow and docker image to analyze Legionella pneumophila whole genome sequencing data to predict serogroup from short read sequences.
 
@@ -62,6 +62,8 @@ Or the container can be run from the wrapper script:
 
 The wrapper script creates the output directory and sets the ulimit.
 
+### Previous versions
+v0.1 - Did not create Log files and Log directory for troubleshooting purposes
 
 ### Developed by
 
