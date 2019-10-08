@@ -2,7 +2,7 @@
 
 Version: 0.2
 
-This project is contains a bioinformatics workflow and docker image to analyze Legionella pneumophila whole genome sequencing data to predict serogroup from short read sequences.
+This project contains a bioinformatics workflow and docker image to analyze Legionella pneumophila whole genome sequencing data to predict serogroup from short read sequences.
 
 ## Requirements
 
