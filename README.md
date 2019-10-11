@@ -51,7 +51,7 @@ The container can be run directly as follows:
 ```
 mkdir output   # the output directory must be created prior to running the docker container
 ulimit -s 5248800
-docker run -v $(pwd)/test-samples:/data -v $(pwd)/output:/output --privileged --rm lp_serogroup:0.2 --r1=/data/sample_R1.fastq --r2=/data/sample_R2.fastq --isolate=sample
+docker run -v $(pwd)/test-samples:/data -v $(pwd)/output:/output --privileged --rm smorrison42/lpserogroup_prediction:0.2 --r1=/data/sample_R1.fastq --r2=/data/sample_R2.fastq --isolate=sample
 ```
 
 Or the container can be run from the wrapper script:
