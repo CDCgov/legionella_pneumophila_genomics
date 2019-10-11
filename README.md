@@ -27,17 +27,17 @@ ulimit -s 5248800
 For users in the CDC environment, build the docker container by running the `build.sh` script:
 
 ```
-./build.sh --tag=lp_serogroup:0.2
+./build.sh --tag=lpserogroup_prediction:0.2
 ```
 
-The `--tag` parameter is optional and has a default value of `lp_serogroup:0.1`.
+The `--tag` parameter is optional and has a default value of `lpserogroup_prediction:0.2`.
 
 ### External Users
 
 For external users, build the container using ``Dockerfile.external``:
 
 ```
-docker build -t lp_serogroup:0.2 -f Dockerfile.external .
+docker build -t lpserogroup_prediction:0.2 -f Dockerfile.external .
 ```
 
 ## Docker UID and GID
@@ -57,7 +57,7 @@ docker run -v $(pwd)/test-samples:/data -v $(pwd)/output:/output --privileged --
 Or the container can be run from the wrapper script:
 
 ```
-./wrapper.sh --docker=lp_serogroup:0.1 --r1=./test-samples/sample_R1.fastq --r2=./test-samples/sample_R2.fastq --isolate=sample --output=./output
+./wrapper.sh --docker=smorrison42/lpserogroup_prediction:0.2 --r1=./test-samples/sample_R1.fastq --r2=./test-samples/sample_R2.fastq --isolate=sample --output=./output
 ```
  
  Or you can pull the container from:
