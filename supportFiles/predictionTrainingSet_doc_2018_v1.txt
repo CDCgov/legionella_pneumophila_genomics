@@ -4,7 +4,7 @@ created by: S.Morrison - SMorrison@cdc.gov - 20190514
 Note: The accuracy and error rate listed above are provided as a guide and not necessarily apply to the predicted sequence.  
 Please perform direct fluorescent antibody or slide agglutination for laboratory confirmatory results.
 This is a NON-CLIA approved test.
-
+Docker Version: 0.2
 
 Serogroup (SG)	Error	Accuracy	SG Specific Sensitivity	SG Specific Specificity
 1	0.00	1	100%	98.14%
